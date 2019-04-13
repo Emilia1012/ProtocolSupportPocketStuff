@@ -1,5 +1,5 @@
-# ProtocolSupportPocketStuff
-Does stuff for ProtocolSupport pocket, I guess.
+# for loyaltymc
+Does stuff for ProtocolSupport pocket, I guess. 
 
 This plugin provides serveral differing features (or stuff) exclusively for minecraft PE on ProtocolSupport servers.
 ### Features
