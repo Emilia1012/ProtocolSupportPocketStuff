@@ -3,7 +3,7 @@ package protocolsupportpocketstuff.hacks.bossbars;
 import net.minecraft.server.v1_13_R2.IChatBaseComponent;
 import net.minecraft.server.v1_13_R2.PacketPlayOutBoss;
 import protocolsupport.api.Connection;
-import protocolsupport.protocol.packet.middleimpl.clientbound.play.v_pe.EntityMetadata;
+import protocolsupport.protocol.packet.middleimpl.clientbound.play.v_pe.EntityMetadata.PeMetaBase;
 import protocolsupport.protocol.utils.datawatcher.DataWatcherObject;
 import protocolsupport.protocol.utils.datawatcher.objects.DataWatcherObjectFloatLe;
 import protocolsupport.protocol.utils.datawatcher.objects.DataWatcherObjectString;
@@ -73,7 +73,7 @@ public class BossBarPacketListener extends Connection.PacketListener {
 			IChatBaseComponent title = (IChatBaseComponent) ReflectionUtils.get(BOSS_TITLE, packet);
 			float percentage = ReflectionUtils.getFloat(BOSS_HEALTH, packet);
 
-			CachedBossBar bossBar = new CachedBossBar(unique, StuffUtils.toLegacy(title), percentage);
+			CachedBossBar bossBar = new CachedBossBar(unique, ChatUtils.toLegacy(title), percentage);
 
 			cachedBossBars.put(unique, bossBar);
 
