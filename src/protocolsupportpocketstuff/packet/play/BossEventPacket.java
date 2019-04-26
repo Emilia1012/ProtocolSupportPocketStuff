@@ -30,7 +30,7 @@ public class BossEventPacket extends PEPacket {
 	} // Boss Event Packet
 
 	@Override
-	public void toData(Connection connection, ByteBuf serializer) {
+	public void toData(ConnectionImpl connection, ByteBuf serializer) {
         VarNumberSerializer.writeSVarLong(serializer, entityId);
         VarNumberSerializer.writeVarInt(serializer, eventId);
         switch (eventId) {
@@ -52,6 +52,6 @@ public class BossEventPacket extends PEPacket {
     }
 
 	@Override
-	public void readFromClientData(Connection connection, ByteBuf clientData) { }
+	public void readFromClientData(ConnectionImpl connection, ByteBuf clientData) { }
 
 }
