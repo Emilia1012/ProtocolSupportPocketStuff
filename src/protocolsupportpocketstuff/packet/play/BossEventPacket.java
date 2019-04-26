@@ -4,9 +4,10 @@ import io.netty.buffer.ByteBuf;
 import protocolsupport.api.Connection;
 import protocolsupport.api.ProtocolVersion;
 import protocolsupport.protocol.serializer.StringSerializer;
-import protocolsupport.protocol.serializer.VarInt;
 import protocolsupport.protocol.serializer.VarNumberSerializer;
 import protocolsupportpocketstuff.packet.PEPacket;
+import protocolsupport.protocol.ConnectionImpl;
+
 
 public class BossEventPacket extends PEPacket {
 
@@ -35,7 +36,7 @@ public class BossEventPacket extends PEPacket {
         VarNumberSerializer.writeVarInt(serializer, eventId);
         switch (eventId) {
             case SHOW: {
-                StringSerializer.writeString(serializer, ProtocolVersion.MINECRAFT_PE, "");
+                StringSerializer.writeString(serializer, ProtocolVersion.MINECRAFT_PE_1_10, "");
                 serializer.writeFloat(1.F);
                 serializer.writeShort(0);
                 VarNumberSerializer.writeVarInt(serializer, 0);
@@ -43,7 +44,7 @@ public class BossEventPacket extends PEPacket {
                 break;
             }
             case UPDATE: {
-                VarInt.writeVarLong(serializer, Integer.MAX_VALUE);
+                VarNumberSerializer.writeVarLong(serializer, Integer.MAX_VALUE);
                 break;
             }
             default:
