@@ -36,7 +36,7 @@ public class BossEventPacket extends PEPacket {
         VarNumberSerializer.writeVarInt(serializer, eventId);
         switch (eventId) {
             case SHOW: {
-                StringSerializer.writeString(serializer, ProtocolVersion.MINECRAFT_PE_1_10, "");
+                StringSerializer.writeString(serializer, ProtocolVersion.MINECRAFT_PE_1_8, "");
                 serializer.writeFloat(1.F);
                 serializer.writeShort(0);
                 VarNumberSerializer.writeVarInt(serializer, 0);
