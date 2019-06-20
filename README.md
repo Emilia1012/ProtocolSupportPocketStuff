@@ -22,6 +22,10 @@ _All features can be disabled in the config.yml_
 
 ## *_WORK IN PROGRESS (OBVIOUSLY)_*
 
+[latest download](http://panel.dragonlight.tk:9090/job/LoyaltyMC-PSPS/lastSuccessfulBuild/artifact/target/ProtocolSupport-PSPE-Wesley-5.jar)
+
+[jenkins](http://panel.dragonlight.tk:9090)
+
 #### Compiling
 Compiling PSPS is similar to ProtocolSupport.
 1. Make sure you have the proper JDK installed.
