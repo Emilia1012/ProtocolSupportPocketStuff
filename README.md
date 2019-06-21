@@ -1,4 +1,4 @@
-# for loyaltymc
+# my persenol fork of it
 Does stuff for ProtocolSupport pocket, I guess. 
 
 This plugin provides serveral differing features (or stuff) exclusively for minecraft PE on ProtocolSupport servers.
@@ -22,7 +22,7 @@ _All features can be disabled in the config.yml_
 
 ## *_WORK IN PROGRESS (OBVIOUSLY)_*
 
-[latest download](http://panel.dragonlight.tk:9090/job/LoyaltyMC-PSPS/lastSuccessfulBuild/artifact/target/ProtocolSupport-PSPE-Wesley-5.jar)
+[latest download](http://panel.dragonlight.tk:9090/job/LoyaltyMC-PSPS/lastSuccessfulBuild/artifact/target/ProtocolSupport-PSPE-Wesley-58.jar)
 
 [jenkins](http://panel.dragonlight.tk:9090)
 
